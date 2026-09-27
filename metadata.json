@@ -1,0 +1,6 @@
+{
+  "name": "Bhuvana Bag Studio",
+  "description": "Editorial handbag studio and weekend pop-up in Anna Nagar, Chennai. Curated sculptural elephant bags, Korean mobile pouches, and handcrafted totes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

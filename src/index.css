@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-editorial: "Cormorant Garamond", "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-wine-dark: #370816;
+  --color-wine-deep: #26050e;
+  --color-wine-rich: #4d0e1e;
+  --color-wine-light: #6a1a2d;
+  --color-gold-accent: #c49a45;
+  --color-gold-muted: #8b6d31;
+  --color-gold-light: #eedbc5;
+  --color-surface-ivory: #faf7f2;
+  --color-surface-cream: #f4eee5;
+  --color-surface-sand: #ece4d7;
+  --color-surface-warm: #fcfaf7;
+  --color-charcoal: #221b1c;
+  --color-charcoal-muted: #5e5254;
+  --color-charcoal-subtle: #8a7c7e;
+  --color-rani-pink: #d81b60;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: #221b1c;
+    background-color: #faf7f2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-editorial {
+    font-family: var(--font-editorial);
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #faf7f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #dfd4c4;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5b49e;
+}
