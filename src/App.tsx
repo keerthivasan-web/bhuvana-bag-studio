@@ -287,17 +287,10 @@ export default function App() {
             className="flex items-center gap-3 group"
           >
             <img
-              src="/logo-b.png"
-              alt="Bhuvana B Logo"
-              className="w-11 h-11 object-contain rounded-full shadow-sm ring-1 ring-[#C49A45]/40 group-hover:scale-105 transition-transform duration-300"
+              src="/title-logo.png"
+              alt="Bhuvana Budget Collection"
+              className="h-10 sm:h-12 w-auto object-contain max-w-[170px] sm:max-w-[210px]"
             />
-            <div className="flex flex-col justify-center">
-              <img
-                src="/title-logo.png"
-                alt="Bhuvana Budget Collection"
-                className="h-10 sm:h-12 w-auto object-contain max-w-[170px] sm:max-w-[210px]"
-              />
-            </div>
           </a>
 
           {/* Desktop Navigation Links */}
@@ -435,7 +428,6 @@ export default function App() {
         {isMobileNavOpen && (
           <div className="lg:hidden bg-[#FAF7F2] border-t border-[#370816]/10 px-6 py-6 flex flex-col gap-4 animate-fade-in shadow-xl">
             <div className="flex items-center gap-3 pb-3 border-b border-[#370816]/10">
-              <img src="/logo-b.png" alt="Bhuvana B Logo" className="w-9 h-9 object-contain rounded-full" />
               <img src="/title-logo.png" alt="Bhuvana Budget Collection" className="h-9 w-auto object-contain bg-white rounded px-1.5 py-0.5 border border-[#370816]/10" />
             </div>
             <a
@@ -575,18 +567,8 @@ export default function App() {
               {/* Left Content Column */}
               <div className="lg:col-span-6 flex flex-col justify-between space-y-8">
                 <div className="space-y-4 sm:space-y-6">
-                  {/* Official Title Logo Image */}
-                  <div className="inline-block p-3 sm:p-4 rounded-xl bg-white/90 shadow-md border border-[#370816]/10 mb-2">
-                    <img
-                      src="/title-logo.png"
-                      alt="Bhuvana Budget Collection Logo"
-                      className="h-28 sm:h-36 md:h-44 w-auto object-contain max-w-full"
-                    />
-                  </div>
-
                   {/* Eyebrow */}
                   <div className="text-xs uppercase tracking-[0.25em] text-[#8B6D31] font-semibold flex items-center gap-2">
-                    <img src="/logo-b.png" alt="Bhuvana B Logo" className="w-5 h-5 rounded-full inline-block" />
                     <span>WEEKEND POP · ANNA NAGAR</span>
                   </div>
 
@@ -1314,11 +1296,6 @@ export default function App() {
           {/* Col 1: Brand info */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <img
-                src="/logo-b.png"
-                alt="Bhuvana B Logo"
-                className="w-10 h-10 object-contain rounded-full ring-1 ring-[#C49A45]"
-              />
               <img
                 src="/title-logo.png"
                 alt="Bhuvana Budget Collection"
