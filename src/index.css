@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
-  --font-editorial: "Cormorant Garamond", "Playfair Display", serif;
-  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Times New Roman", Times, serif;
+  --font-editorial: "Times New Roman", Times, serif;
+  --font-sans: Arial, Helvetica, sans-serif;
 
   --color-wine-dark: #370816;
   --color-wine-deep: #26050e;
@@ -23,20 +23,20 @@
 }
 
 @layer base {
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
   body {
-    font-family: var(--font-sans);
+    font-family: Arial, Helvetica, sans-serif;
     color: #221b1c;
     background-color: #faf7f2;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1, h2, h3, .font-serif {
-    font-family: var(--font-serif);
-  }
-
-  .font-editorial {
-    font-family: var(--font-editorial);
+  h1, h2, h3, h4, h5, h6, .font-serif, .font-editorial {
+    font-family: "Times New Roman", Times, serif !important;
   }
 }
 

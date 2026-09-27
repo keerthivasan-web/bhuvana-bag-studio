@@ -284,18 +284,19 @@ export default function App() {
               setSelectedCategory('all');
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="flex items-center gap-3.5 group"
+            className="flex items-center gap-3 group"
           >
-            <div className="w-10 h-10 rounded-full bg-[#370816] text-[#C49A45] flex items-center justify-center font-serif text-xl font-bold ring-1 ring-[#C49A45]/40 group-hover:scale-105 transition-transform duration-300">
-              B
-            </div>
-            <div className="flex flex-col">
-              <span className="font-serif text-2xl tracking-[-0.01em] text-[#370816] font-medium leading-none">
-                Bhuvana
-              </span>
-              <span className="text-[10px] uppercase tracking-[0.22em] text-[#8B6D31] font-medium mt-1">
-                The Bag Studio · Anna Nagar
-              </span>
+            <img
+              src="/logo-b.png"
+              alt="Bhuvana B Logo"
+              className="w-11 h-11 object-contain rounded-full shadow-sm ring-1 ring-[#C49A45]/40 group-hover:scale-105 transition-transform duration-300"
+            />
+            <div className="flex flex-col justify-center">
+              <img
+                src="/title-logo.png"
+                alt="Bhuvana Budget Collection"
+                className="h-10 sm:h-12 w-auto object-contain max-w-[170px] sm:max-w-[210px]"
+              />
             </div>
           </a>
 
@@ -433,6 +434,10 @@ export default function App() {
         {/* Mobile Navigation Drawer */}
         {isMobileNavOpen && (
           <div className="lg:hidden bg-[#FAF7F2] border-t border-[#370816]/10 px-6 py-6 flex flex-col gap-4 animate-fade-in shadow-xl">
+            <div className="flex items-center gap-3 pb-3 border-b border-[#370816]/10">
+              <img src="/logo-b.png" alt="Bhuvana B Logo" className="w-9 h-9 object-contain rounded-full" />
+              <img src="/title-logo.png" alt="Bhuvana Budget Collection" className="h-9 w-auto object-contain bg-white rounded px-1.5 py-0.5 border border-[#370816]/10" />
+            </div>
             <a
               href="#home"
               onClick={() => {
@@ -570,13 +575,23 @@ export default function App() {
               {/* Left Content Column */}
               <div className="lg:col-span-6 flex flex-col justify-between space-y-8">
                 <div className="space-y-4 sm:space-y-6">
+                  {/* Official Title Logo Image */}
+                  <div className="inline-block p-3 sm:p-4 rounded-xl bg-white/90 shadow-md border border-[#370816]/10 mb-2">
+                    <img
+                      src="/title-logo.png"
+                      alt="Bhuvana Budget Collection Logo"
+                      className="h-28 sm:h-36 md:h-44 w-auto object-contain max-w-full"
+                    />
+                  </div>
+
                   {/* Eyebrow */}
-                  <div className="text-xs uppercase tracking-[0.25em] text-[#8B6D31] font-semibold">
-                    WEEKEND POP
+                  <div className="text-xs uppercase tracking-[0.25em] text-[#8B6D31] font-semibold flex items-center gap-2">
+                    <img src="/logo-b.png" alt="Bhuvana B Logo" className="w-5 h-5 rounded-full inline-block" />
+                    <span>WEEKEND POP · ANNA NAGAR</span>
                   </div>
 
                   {/* Headline */}
-                  <h1 className="font-serif text-[44px] sm:text-[60px] md:text-[70px] lg:text-[78px] xl:text-[84px] text-[#370816] font-normal leading-[1.05] tracking-tight">
+                  <h1 className="font-serif text-[40px] sm:text-[54px] md:text-[64px] text-[#370816] font-normal leading-[1.06] tracking-tight">
                     Little things.<br />
                     <span className="italic font-normal font-editorial text-[#8B6D31]">Beautifully</span> chosen.
                   </h1>
@@ -1232,7 +1247,12 @@ export default function App() {
 
         {/* BRAND STORY / ABOUT SECTION */}
         <section id="about" className="w-full py-20 sm:py-24 bg-[#FAF7F2]">
-          <div className="max-w-4xl mx-auto px-6 text-center space-y-6">
+          <div className="max-w-4xl mx-auto px-6 text-center space-y-6 flex flex-col items-center">
+            <img
+              src="/title-logo.png"
+              alt="Bhuvana Budget Collection"
+              className="h-24 sm:h-32 w-auto object-contain bg-white p-3 rounded-lg shadow-sm border border-[#370816]/10 mb-2"
+            />
             <span className="text-xs uppercase tracking-[0.25em] text-[#8B6D31] font-semibold block">
               OUR BRAND STORY
             </span>
@@ -1294,10 +1314,16 @@ export default function App() {
           {/* Col 1: Brand info */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-full bg-[#C49A45] text-[#370816] flex items-center justify-center font-serif text-lg font-bold">
-                B
-              </div>
-              <span className="font-serif text-2xl tracking-wide">Bhuvana</span>
+              <img
+                src="/logo-b.png"
+                alt="Bhuvana B Logo"
+                className="w-10 h-10 object-contain rounded-full ring-1 ring-[#C49A45]"
+              />
+              <img
+                src="/title-logo.png"
+                alt="Bhuvana Budget Collection"
+                className="h-11 w-auto object-contain bg-white rounded-md p-1"
+              />
             </div>
             <p className="text-xs text-[#FAF7F2]/70 leading-relaxed max-w-sm font-light">
               Women&apos;s handbag studio and weekend pop-up in Anna Nagar, Chennai. Curved elephant bags, Korean mobile pouches, ALDO totes, and crescent moon bags.
